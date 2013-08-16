@@ -36,7 +36,7 @@ var self = window;
 		 * List words.
 		 */
 		
-		words = [ 'circle', 'ovals', 'drop', 'ribbon' ],
+		words = [ '.bashrc', 'ovals', 'drop', 'ribbon' ],
 		
 		/*
 		 * List colors.
@@ -353,7 +353,7 @@ var self = window;
 		
 		var strip = words[layout].toUpperCase().split('').join(String.fromCharCode(8202));
 		
-		context.fillText(strip, canvas.width * 0.5, canvas.height - 50);
+		context.fillText(strip, canvas.width * 0.5, canvas.height - 175);
 			
 		var surface = context.getImageData(0, 0, canvas.width, canvas.height);
 				
@@ -402,8 +402,8 @@ var self = window;
 			
 				case 'circle':
 				
-					shape.x = canvas.width * 0.5 + 140 * Math.sin(particle.steps);
-					shape.y = 80 + 100 * Math.cos(particle.steps);
+					shape.x = canvas.width * 0.5 + 20 * Math.sin(particle.steps);
+					shape.y = 320 + 20 * Math.cos(particle.steps);
 					
 					break;
 					
