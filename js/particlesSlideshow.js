@@ -401,8 +401,8 @@ var self = window;
 			switch(currentTransition) {
 			
 				case 'circle':
-				
-					shape.x = canvas.width * 0.5 + 20 * Math.sin(particle.steps);
+					
+					shape.x = canvas.width * 0.5 + 120 * Math.sin(particle.steps);
 					shape.y = 320 + 20 * Math.cos(particle.steps);
 					
 					break;
