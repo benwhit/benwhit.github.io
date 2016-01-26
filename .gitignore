@@ -1,1 +1,2 @@
-.sftp-config
+// Ignore FTP File
+sftp-config.json
